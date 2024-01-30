@@ -1,0 +1,219 @@
+.navbar {
+    background-color: var(--firstcolor);
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    z-index: 20;
+    padding-left: 185px;
+    padding-right: 185px;
+       /* GUIDE LINE */;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    width: 1130px;
+    height: 70px;
+    max-width: 1500px;
+    background-color: var(--firstcolor);
+    z-index: 90;
+    justify-content: space-between;
+    /* border: 1px solid red; */
+}
+
+/* .headroom {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-Index: 90;
+  }
+  .headroom--unfixed {
+    position: relative;
+    transform: translateY(0);
+  }
+  .headroom--scrolled {
+    transition: transform 200ms ease-in-out;
+  }
+  .headroom--unpinned {
+    position: fixed;
+    transform: translateY(-100%);
+  }
+  .headroom--pinned {
+    position: fixed;
+    transform: translateY(0%);
+} */
+
+.nav-menu ul{
+    display: flex;
+    list-style: none;    
+    margin-right: 20px;
+}
+
+.nav-menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 40px;
+    font-family: 'Poppins', sans-serif;
+    line-height: normal;
+    font-weight: 500;
+    font-size: 13px;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s
+}
+
+.nav-menu ul li a:hover{
+    color: #C3ACD0;
+}
+
+/* 
+.nav-menu ul li a:last-child[href="/HireMe"]{
+    border-radius: 10px;
+    border: 1px solid white;
+} */
+
+.nav-menu ul li:last-child a{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #fff;
+  color: var(--firstcolor);
+  transition: background-color 0.3s, border-radius 0.3s;
+}
+
+.nav-menu ul li:last-child a:hover{
+  background-color: #C3ACD0;
+  border-radius: 11px;
+}
+
+/* .nav-menu ul li a[href="/About"] {
+    margin-left: 0
+} */
+
+.cclogo{
+  align-items: center;
+}
+
+.cclogo img {
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+
+.cclogo img:hover, .cclogo img:focus, .cclogo img:active {
+  -webkit-transform: translateX(-8px);
+  transform: translateX(-8px);
+}
+
+.hamburger{
+  display: none;
+  position: absolute;
+  right: 4.5rem;
+  top: 1.7rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2rem;
+  height: 1.2rem;
+}
+
+.hamburger span{
+  height: 0.2rem;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0.2rem;
+}
+
+@media (max-width: 768px) {
+
+  .navbar{
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 562px) {
+
+  .navbar{
+    padding: 0;
+  }
+
+  .hamburger{
+    display: flex;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.6rem;
+
+  }
+
+  .nav-menu{
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+  }
+  .nav-menu ul{
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--firstcolor);
+    width: 100%;
+    margin-right: 0;
+    display: none;
+  }
+
+  .nav-menu ul.open{
+    display: flex;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 50vh;
+    box-shadow: rgba(45, 35, 66, 0.4) -5px 7px 13px,rgba(45, 35, 66, 0.3) 5px 7px 13px -3px,#D9D9D980 0 -3px 0 inset;
+    box-sizing: border-box;
+  }
+
+  .nav-menu ul li a{
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .nav-menu ul li{
+    width: 100px;
+    height: 40px;
+    margin-top: 5px;
+    text-align: center;
+    
+  }
+  .nav-menu ul li:last-child{
+    margin-bottom: 20px;
+  }
+  /* 
+  .nav-menu ul li:first-child{
+    margin-top: 50px;
+  } */
+
+  .cclogo{
+    position: absolute;
+    left: 1.5rem;
+    top: 1.2rem;
+  }
+
+  .nav-menu ul li:last-child a{
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+    color: #fff;
+    transition: color 0.3;
+  }
+
+  .nav-menu ul li:last-child a:hover{
+    color: #C3ACD0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  
+}
+
