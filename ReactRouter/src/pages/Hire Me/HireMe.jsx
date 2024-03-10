@@ -1,11 +1,13 @@
 import './hireme.css'
-import Gear from '../../components/Gear/Gear'
+import Form from '../../components/Form/Form'
+
+// import Gear from '../../components/Gear/Gear'
 
 
 const HireMe = () => {
   return (
     <div className='hireMe'>
-      <Gear/>
+      <Form/>
     </div>
   )
 }
