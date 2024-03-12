@@ -29,18 +29,30 @@ const Form = () => {
             <header>HIRE ME!</header>
         </div>
         <div className="form_Container">
-          <form ref={form} onSubmit={sendEmail}>
-          <label>Name</label>
-          <input type="text" name="user_name" />
-          <label>Email</label>
-          <input type="email" name="user_email" />
-          <label>Subject</label>
-          <input type="subject" name="subject" />
-          <label>Message</label>
-          <textarea name="message" />
-          <input type="submit" value="Sumbit" />
-          </form>
-        </div>
+          <div className="form_Contents">
+            <form ref={form} onSubmit={sendEmail} className='form'>
+              <div className="form_Name">
+                <label>Name</label> <br />
+                <input type="text" name="user_name"/>
+              </div>
+              <div className="form_Email">
+                <label>Email</label> <br />
+                <input type="email" name="user_email"/>
+              </div>
+              <div className="form_Subject">
+                <label>Subject</label>  <br /> 
+                <input type="subject" name="subject"/>
+              </div>
+              <div className="form_Message">
+                <label>Message</label>  <br />
+                <textarea name="message" />
+              </div>
+              <div className="form_Submit"> <br />
+                <input type="submit" value="Sumbit"/>
+              </div>
+            </form>
+          </div>
+      </div>
     </div>
   )
 }
