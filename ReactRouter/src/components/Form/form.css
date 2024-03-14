@@ -18,7 +18,7 @@
     background: #101A31;
     box-shadow: -4px 3px 0px rgba(0, 21, 36, 1);
     /* border: 1px solid red; */
-    padding: 73px 73px 120px 73px;
+    padding: 55px 73px 120px 73px;
     
 }
 .form_Contents{
@@ -36,9 +36,110 @@
 
 .form_Container input[type="text"],
 .form_Container input[type="email"],
-.form_Container input[type="subject"],
-.form_Container textarea {
+.form_Container input[type="subject"] {
     width: 308px; 
     height: 23px;
-    padding-bottom: 23px;
+    outline: none;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #B7A1A1;
+    margin-bottom: 23px;
 }
+
+input[type="email"],
+input[type="subject"],
+input[type="text"]{
+    color: #fff;
+    border-bottom: 2px solid #FFD23F;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+
+
+.form_Container textarea {
+    width: 308px;
+    outline: none;
+    height: 30px;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid #B7A1A1;
+}
+
+textarea{
+    color: #fff;
+    border-bottom: 2px solid #FFD23F;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+}
+
+.form_Container input[type="submit"] {
+    align-items: center;
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    height: 39px;
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: 119px;
+    }
+
+    input[type="submit"]:hover,
+    input[type="submit"]:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+    }
+
+    input[type="submit"]:hover {
+    transform: translateY(-1px);
+    }
+
+    input[type="submit"]:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 1px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .form_Message textarea,
+.form_Name input,
+.form_Email input,
+.form_Subject input {
+    padding-bottom: 23px;
+    
+} */
+
+
+
+
+
+
+  
